@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(70deg, #593e67, #593e67);
+  /* position: relative; */
+}
+#container {
+  width: 80vw;
+  height: 77vh;
+  /* border: 2px solid black; */
+  position: relative;
+  top: 15vh;
+  left: 10vw;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px black;
+  background-image: linear-gradient(140deg, #9a516cf7 40%, rgb(199, 141, 151));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login {
+  width: 30vw;
+  height: 50vh;
+  position: absolute;
+  bottom: 0;
+  /* border: 2px saddlebrown solid; */
+  background-color: #b85b56;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#heading {
+  font-size: 3vw;
+  letter-spacing: 1vw;
+  text-align: center;
+  position: absolute;
+  top: 0.5vh;
+}
+#inputdiv {
+  position: absolute;
+  top: 15vh;
+  border: 0.2vw solid #de741c;
+  width: 20vw;
+  height: 5vh;
+  border-radius: 20vw;
+}
+#passdiv {
+  position: relative;
+  top: 2vh;
+  border: 0.2vw solid #de741c;
+  width: 20vw;
+  height: 5vh;
+  border-radius: 20vw;
+}
+
+#gmail,
+#pass {
+  width: 20vw;
+  height: 5vh;
+  border: transparent;
+  background-color: transparent;
+  border-radius: 20vw;
+  outline: none;
+  text-align: center;
+  font-size: 1vw;
+}
+#passimg {
+  width: 2vw;
+  border-radius: 100%;
+  position: absolute;
+  right: 0.1vw;
+  top: 0.2vh;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 0.7; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: black;
+}
+#but {
+  position: absolute;
+  top: 10vh;
+  width: 6vw;
+  height: 5vh;
+  border-radius: 20vw;
+  outline: none;
+  border: none;
+  /* border: 0.18vw solid lime; */
+  background-color: #fea837a7;
+  right: 7vw;
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+#but:hover {
+  background-color: #fea837;
+}
+
+#warning {
+  position: absolute;
+  top: 21vh;
+  font-size: 1vw;
+  color: red;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 2px 2px 2px black;
+}
+
+.time {
+  position: absolute;
+  top: 3vh;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  width: 20vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hms {
+  font-size: 4vw;
+  font-weight: 200;
+}
+.ampm {
+  font-size: 1.5vw;
+}
+.date {
+  font-size: 1.5vw;
+}

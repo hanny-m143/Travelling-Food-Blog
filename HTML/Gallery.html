@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Russo+One&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Asset/logo/logo.png">
+    <link rel="stylesheet" href="../CSS/gallery.css">
+    <script src="../JS/gallery.js" defer></script>
+</head>
+
+<body >
+    <div id="header">
+        <img id="logo" src="../Asset/logo/logo.png">
+        <ul>
+            <li><a href="Home.html" target="_blank">Home </a></li>
+            <li><a href="about.html" target="_blank">About </a></li>
+            <li><a href="Places.html" target="_blank">Places</a></li>
+            <li><a href="Gallery.html" target="_blank">Gallery</a></li>
+            <li><a href="../index.html">Logout</a></li>
+        </ul>
+    </div>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slide first">
+                    <img  id="first"  src="../Asset/Images/1.jpg">
+                </div>
+                <div>
+                    <img  id="second" src="../Asset/Images/2.jpg">
+                </div>
+                <div>
+                    <img id="third"  src="../Asset/Images/3.jpg">
+                </div>
+                <div>
+                    <img id="four"  src="../Asset/Images/4.jpg">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+      <div class="container">
+        <h1> Image Gallery </h1>
+        <div class="image-container">
+            <div class="image"> <img src="../Asset/Images/1 (2).jpg" > </div>
+            <div class="image"> <img src="../Asset/Images/2 (2).jpg" > </div>
+            <div class="image"> <img src="../Asset/Images/3 (2).jpg" > </div>
+            <div class="image"> <img src="../Asset/Images/4 (2).jpg" > </div>
+            <div class="image"> <img src="../Asset/Images/5.jpg" > </div>
+            <div class="image"> <img src="../Asset/Images/6.jpg" > </div>
+            <div class="image"> <img src="../Asset/Images/7.jpg" > </div>
+            <div class="image"> <img src="../Asset/Images/8.jpg" > </div>
+            <div class="image"> <img src="../Asset/Images/9.jpg" > </div>
+            <div class="image"> <img src="../Asset/Images/10.jpg" > </div>
+            <div class="image"> <img src="../Asset/Images/11.jpg" > </div>
+            <div class="image"> <img src="../Asset/Images/12.jpg" > </div>
+        </div>
+
+        <div class="popup-image">
+            <span> &times; </span>
+            <img src="../Asset/Images/1 (2).jpg"  >
+        </div>
+      </div>
+      <script>
+        document.querySelectorAll('.image-container img').forEach(image =>
+  {
+    image.onclick = () =>{
+      document.querySelector('.popup-image').style.display = 'block';
+      document.querySelector('.popup-image img').src = image.getAttribute('src');
+    }
+  })
+  document.querySelector('.popup-image span').onclick = () => {
+    document.querySelector('.popup-image').style.display = 'none';
+  }
+      </script>
+</body>
+
+</html>
